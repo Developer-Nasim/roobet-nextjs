@@ -1,0 +1,71 @@
+section.alloffers {
+    padding: 100px 0;
+    background: linear-gradient(90deg, #100F2D, #100f2d00, #100f2d00, #0C0722);
+}
+
+.all_the_offers {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.singleOffers {
+    padding: 8px;
+    border-radius: 5px;
+    background: #EFEFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.singleOffers_contents {
+    display: flex;
+    align-items: center;
+    background: rgb(150 149 206 / 30%);
+    width: 100%;
+    border-radius: 8px;
+    gap: 10px;
+}
+
+.singleOffers_contents > div {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.singleOffers_contents > div > p {
+    width: 33%;
+    text-align: center;
+    font-weight: 700;
+    color: #0C0722;
+}
+
+.singleOffers_contents > div > p small {
+    display: block;
+    font-size: 75%;
+    color: #307BD3;
+    margin-top: 5px;
+}
+
+.singleOffers_buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+ 
+
+span.dashline {
+    display: block;
+    width: 15px;
+    height: 3px;
+    background: #9191C4;
+    margin: auto;
+}
+
+.singleOffers_contents > div > p span.dashline {
+    position: relative;
+    top: 22px;
+}

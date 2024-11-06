@@ -1,21 +1,176 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+*{
+  transition: all .3s;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+}
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --theme: #100F2D;
+  --bg: #22214A;
+  --bg2: #0C0722;
+  --bg3: #100F2D;
+  --themeSoft: #1F1D47;
+  --themeSoft2: rgba(34,33,74,50%);
+  --themeSoft3: #9191C4;
+  --themeSoftLeaner: linear-gradient(#27264F,#212047);
+  --white: #fff;
+  --whiteSoft: #EFEFFF;
+  --whiteSoft3: rgba(150,149,206,30);
+  --blue:#307BD3;
+  --greenLinear:linear-gradient(0deg,#60C946,#30AC72);
+  --blueLinear:linear-gradient(0deg, #307BD3, #3E91F2);
+  --textShadow: 0 1 2 0 #0A7F66;
+  --textShadowDark: 0 1 2 0 #0c0722b3;
+
+  --bodyfont: "Inter", sans-serif;
+  --headingfonts: "Inter", sans-serif;
+
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #100F2D;
+    --foreground: #100F2D;
   }
-}
+} */
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--white);
+  background: var(--theme);
+  font-family: var(--bodyfont);
+  font-size: 16px; 
+  font-weight: 400; 
+}
+.container{
+  max-width: 1070px;
+}
+
+button {
+  cursor: pointer; 
+}
+
+a:focus,
+.button:focus {
+  text-decoration: none;
+  outline: none; 
+}
+
+a:focus,
+a:hover {
+  color: inherit;
+  text-decoration: none; 
+}
+
+a,
+button {
+  color: inherit;
+  outline: medium none; }
+
+button:focus, input:focus, input:focus, textarea, textarea:focus {
+  outline: 0; }
+
+ 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--bodyfont);
+  margin-top: 0px;
+  text-transform: normal;
+ }
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit; 
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 24px; }
+
+h3 {
+  font-size: 22px; }
+
+h4 {
+  font-size: 20px; }
+
+h5 {
+  font-size: 18px; }
+
+h6 {
+  font-size: 16px; }
+
+ul {
+  margin: 0px;
+  padding: 0px; }
+
+li {
+  list-style: none; }
+
+ img{
+  max-width: 100%;
+ }
+ a{
+  text-decoration: none;
+  color: inherit;
+ }
+ button{
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0;
+  line-height: auto;
+ }
+
+
+
+
+
+
+
+
+ /* Big screen :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {
+
+
+}
+
+
+/* Normal screen :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+
+
+}
+
+ 
+/* Tablet screen :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+}
+
+ 
+/* small screen :320px. */
+@media (max-width: 767px) {
+
+ 
+}
+ 
+/* Large Mobile screen :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.container {width:450px}
+ 
 }

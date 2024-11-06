@@ -1,0 +1,34 @@
+.nextPrevs {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.nextPrevs button {
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    background: linear-gradient(0deg, #313063, #2D2D54);
+    padding: 9px;
+}
+
+.nextPrevs button svg {
+    fill: #fff;
+}
+
+.allVideos {
+    position: relative;
+    margin-top: 100px;
+}
+
+.allVideos h4 {
+    margin-bottom: 30px;
+}
+.allVideos > p {
+    font-weight: 600;
+    color: #71709C;
+    margin-top: 15px;
+}

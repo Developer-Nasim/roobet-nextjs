@@ -1,0 +1,119 @@
+section.discoveroffers {
+    padding: 50px 0;
+}
+
+.dsoffer-blk {
+    position: relative; 
+}
+ 
+
+.dsoffer-wrap .dsoffer-blk {
+    margin-top: 30px;
+}
+
+.dsoffer-blk .status {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: none;
+    border-radius: 3px;
+    top: -5px;
+    right: -5px;
+    padding: 5px 20px 5px 10px;
+    z-index: 9;
+    font-size: 14px;
+    font-weight: 600;
+}
+.dsoffer-blk .status img.bg {
+    z-index: -1;
+}
+.dsoffer-blk-details {
+    position: relative;
+    display: block;
+    z-index: 2;
+}
+.dsoffer-blk > p span.not_available {
+    background: radial-gradient(#EF74FF, #C9466D);
+}
+.dsoffer-blk-details > img {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.dsoffer-blk-details-btns {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    background: #EFEFFF;
+    border-radius: 0 0 5px 5px;
+    margin-top: -10px;
+    position: relative;
+    z-index: 2;
+    padding: 0px 15px;
+    padding-top: 0; 
+}
+
+.dsoffer-blk-details-btns button.theme-btn.infoBtn ,
+button.theme-btn.infoBtn,a.theme-btn.infoBtn {
+    padding: 7px 9px;
+    background: #2C84EC;
+    border: 1px solid #fff;
+}
+.singleOffers_buttons > button:not(.infoBtn) {
+    font-weight: 700;
+    width: 250px; 
+}
+.dsoffer-blk-details-btns button.theme-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 20px;
+    border: 1px solid #fff;
+    gap: 30px;
+    font-size: 12px;
+    padding-right: 10px;
+}
+
+.dsoffer-blk-details-btns button.theme-btn span {
+    display: flex;
+    align-items: center;
+    background: #187147;
+    width: 15.5px;
+    height: 15.5px;
+    position: relative;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.dsoffer-blk-details-btns button.theme-btn span img {
+    width: 8px;
+    height: 8px;
+}
+
+.dsoffer-blk-details-btns button {
+    position: relative;
+    top: -15px;
+    box-shadow: 0 2px 6px 0 #100f2d96;
+}
+
+.dsoffer-blk > p {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+    color: #C9C9F4;
+    font-weight: 600;
+}
+
+.dsoffer-blk > p span {
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: radial-gradient(#D5FF74, #60C946);
+    border-radius: 50%;
+    filter: blur(2px);
+}
