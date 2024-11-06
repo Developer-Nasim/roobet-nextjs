@@ -1,5 +1,3 @@
-
-import Image from 'next/image'
 import Link from 'next/link'
 import React, { ReactNode } from 'react'
 type MenuItemProps = {
@@ -9,7 +7,7 @@ type MenuItemProps = {
     children: ReactNode;
   
   };
-export const MenuItem:React.FC<MenuItemProps> =  ({src,width,height}) => {
+export const MenuItem:React.FC<MenuItemProps> =  () => {
     return (
       <Link href={"/"}>
       {/* <Image src={src} alt='' width={width} height={height}/> */}

@@ -1,6 +1,5 @@
 import Image from 'next/image'
-import React from 'react'
-import Button from '../Button'
+import React from 'react' 
 import RoobetPackSingle from './RoobetPackSingle'
 import './style.css'
 
@@ -49,8 +48,6 @@ const RoobetPackdraw = () => {
                             btnType="startnow"
                             icon="/assets/img/star0.png"
                             >
-                                <h2><b>VIP</b> Rewards</h2>
-                                <p>Et quoniam inedia gravi adflictabantur, locum petivere Paleas nomine, vergentem in mare, valido muro firmatum, ubi conduntur nunc usque commeatus distribui militibus omne latus Isauriae defendentibus adsueti. circumstetere igitur hoc</p>
                                 <Image src={"/assets/img/rpdfirst.png"} width={245} height={107} className='firstImg' alt=''/>
                             </RoobetPackSingle>
                         </div>

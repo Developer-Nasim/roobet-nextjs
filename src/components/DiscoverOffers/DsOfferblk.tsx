@@ -34,7 +34,7 @@ const DsOfferblk:React.FC<AllProps> = ({
   return (
     <div className={`dsoffer-blk ${classes}`}>
         <div className="status">
-            <Image src={mainStatusBg} layout='fill' alt='' className='bg'/>
+            <Image src={mainStatusBg} fill alt='' className='bg'/>
             <Image src={mainStatusIcon} width={mainStatusIconWidth} height={mainStatusIconHeight} alt=''/>
             {mainStatusText}
         </div>

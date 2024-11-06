@@ -40,33 +40,7 @@ section.roobet_packdraw:after {
     min-width: 21px;
 }
 
-.rpd-blk-contents {
-    position: unset;
-    width: 100%;
-}
-
-.rpd-blk-contents > div {
-    max-width: 270px;
-    position: unset;
-}
-
-.rpd-blk-contents > div h2 {
-    font-weight: 600;
-    margin-bottom: 5px;
-}
-
-.rpd-blk-contents > div p {
-    color: #EEC8BD;
-    font-size: 13px;
-}
-
-.rpd-blk-contents > div img.firstImg {
-    position: absolute;
-    right: 20px;
-    bottom: 100px;
-}
-
-.rpd-blk-contents button.theme-btn {float: right;width: 204px;}
+ 
 
 .rpd-blk:after {
     content: "";

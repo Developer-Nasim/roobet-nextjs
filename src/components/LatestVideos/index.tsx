@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from 'react'
+import React, { MouseEvent, useState } from 'react'
 import 'keen-slider/keen-slider.min.css'
 import { useKeenSlider } from 'keen-slider/react'
 import Image from 'next/image';
@@ -42,16 +42,19 @@ const LatestVideos = () => {
           <div className='nextPrevs'>
             <Arrow
               left
-              onClick={(e: any) =>
-                e.stopPropagation() || instanceRef.current?.prev()
-              }
+              onClick={(e: MouseEvent<HTMLButtonElement>) => {
+                e.stopPropagation();
+                instanceRef.current?.prev();
+              }}
+
               disabled={currentSlide === 0}
             />
 
             <Arrow
-              onClick={(e: any) =>
-                e.stopPropagation() || instanceRef.current?.next()
-              }
+              onClick={(e: MouseEvent<HTMLButtonElement>) => {
+                e.stopPropagation()
+                instanceRef.current?.next()
+              }}
               disabled={
                 currentSlide ===
                 instanceRef.current.track.details.slides.length - 1
@@ -89,7 +92,7 @@ const LatestVideos = () => {
 function Arrow(props: {
     disabled: boolean
     left?: boolean
-    onClick: (e: any) => void
+    onClick: (e: MouseEvent<HTMLButtonElement>) => void
   }) {
     const disabled = props.disabled ? " arrow--disabled" : ""
     return (

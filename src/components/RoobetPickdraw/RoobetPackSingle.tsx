@@ -1,6 +1,6 @@
-import Image from 'next/image'
 import React, { ReactEventHandler, ReactNode } from 'react'
 import Button from '../Button'
+import RoobetPackdrawContent from './RoobetPackdrawContent';
 
 
 type allprops = {
@@ -20,14 +20,15 @@ const RoobetPackSingle:React.FC<allprops> = ({
     children
 }) => {
   return (
-    <div className={`rpd-blk ${classes}`}> 
-        <span><Image src={icon} width={21} height={21} alt=''/></span>
-        <div className='rpd-blk-contents'>
-            <div>
-                {children}
-            </div>
-            <Button btype='button' onclick_event={btnCick}>{btnType === "register" ? <>Start <b>NOW !</b></> : <><b>Register</b></>} </Button>
-        </div>
+    <div className={`rpd-blk ${classes}`}>
+    <RoobetPackdrawContent 
+        icon={icon}
+    >
+        <h2><b>VIP</b> Rewards</h2>
+        <p>Et quoniam inedia gravi adflictabantur, locum petivere Paleas nomine, vergentem in mare, valido muro firmatum, ubi conduntur nunc usque commeatus distribui militibus omne latus Isauriae defendentibus adsueti. circumstetere igitur hoc</p>
+    </RoobetPackdrawContent>
+    {children}
+    <Button btype='button' onclick_event={btnCick}>{btnType === "register" ? <>Start <b>NOW !</b></> : <><b>Register</b></>} </Button>
     </div>
   )
 }
